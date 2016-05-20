@@ -1,0 +1,14 @@
+<head>
+  <title>test</title>
+</head>
+
+<body>
+  <h1>Test</h1>
+  {{> binding}}
+</body>
+
+<template name="binding">
+  <input {{b "value: first, focus: isFocused, throttle: 1000, attr: {placeholder: 'first name'}"}} type="text">
+  <input {{b "value: last, throttle: 1000, attr: {placeholder: 'last name'}"}} type="text">
+  <div {{b "text: fullName"}} ></div>
+</template>
